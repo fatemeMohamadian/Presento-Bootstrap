@@ -1,0 +1,863 @@
+@font-face {
+  font-family: "header";
+  src: url("../font/Merriweather-Regular.ttf");
+  font-family: "title";
+  src: url("../font/Merriweather-Bold.ttf");
+  font-family: "text";
+  src: url("../font/Merriweather-Light.ttf");
+  font-family: "text2";
+  src: url("../font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+main {
+  overflow-x: hidden;
+}
+main .row > header {
+  margin: 10px 0;
+}
+main .row > header > .row > a {
+  width: 20%;
+  font-family: "header";
+  color: rgb(0, 0, 0);
+}
+main .row > header > .row > nav {
+  width: 60%;
+  position: relative;
+}
+main .row > header > .row > nav > ul > li {
+  margin: 0 15px;
+  transition: 0.4s;
+}
+main .row > header > .row > nav > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+main .row > header > .row > nav > ul > li > ul {
+  width: 150px;
+  height: 180px;
+  position: absolute;
+  top: 115%;
+  left: 53%;
+  background-color: rgb(197, 192, 192);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 20;
+}
+main .row > header > .row > nav > ul > li > ul > li {
+  padding-left: 15px;
+  padding-top: 10px;
+  transition: 0.4s;
+}
+main .row > header > .row > nav > ul > li > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+main .row > header > .row > nav > ul > li > ul > li > ul {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 53%;
+  left: 105%;
+  background-color: rgb(197, 192, 192);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 20;
+}
+main .row > header > .row > nav > ul > li > ul > li > ul > li {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+main .row > header > .row > nav > ul > li > ul > li > ul > li > a {
+  text-decoration: none;
+  color: rgb(14, 14, 14);
+  font-family: "header";
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+main .row > header > .row > nav > ul > li > ul > li > ul > li > a:hover {
+  color: orangered;
+}
+main .row > header > .row > nav > ul > li > ul > li > a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-family: "header";
+  font-weight: bold;
+  transition: 0.4s;
+}
+main .row > header > .row > nav > ul > li > ul > li > a:hover {
+  color: orangered;
+}
+main .row > header > .row > nav > ul > li > ul > li > a > i {
+  padding-left: 15px;
+  font-size: 15px;
+}
+main .row > header > .row > nav > ul > li > a {
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  text-transform: capitalize;
+  font-family: "header";
+  font-weight: bold;
+  transition: 0.4s;
+}
+main .row > header > .row > nav > ul > li > a:hover {
+  color: orangered;
+}
+main .row > header > .row > nav > ul > li > a > i {
+  font-size: 15px;
+}
+main .row > header > .row > #link {
+  width: 10%;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 14px;
+  background-color: rgb(151, 8, 8);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+  font-family: "text2";
+}
+main .row > header > .row > #link:hover {
+  background-color: rgb(18, 17, 17);
+}
+main .row > header > .row > span {
+  width: 10%;
+}
+main .row > #slide1 {
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+main .row > #slide1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.649);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .row > #slide1 > .row > div {
+  z-index: 10;
+}
+main .row > #slide1 > .row > div > * {
+  color: rgb(255, 255, 255);
+  font-family: "title";
+  padding-left: 80px;
+}
+main .row > #slide1 > .row > div > h2 {
+  margin-top: 150px;
+  font-size: 50px;
+}
+main .row > #slide1 > .row > div > h4 {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.909);
+}
+main .row > #slide1 > .row > div > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(143, 10, 10);
+  margin-left: 85px;
+  line-height: 60px;
+  transition: 0.4s;
+}
+main .row > #slide1 > .row > div > a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+}
+main .row > #slide2 {
+  margin-top: 70px;
+}
+main .row > #slide2 > figure {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+}
+main .row > #slide2 > figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.702);
+  transition: 1s;
+}
+main .row > #slide2 > figure:hover::after {
+  opacity: 0;
+}
+main .row > #slide3 {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+main .row > #slide3::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 220%;
+  background-color: rgba(0, 0, 0, 0.956);
+  top: 0;
+  left: 0;
+  rotate: -5deg;
+  transform: translateX(-39px);
+}
+main .row > #slide3 > .row > div {
+  z-index: 30;
+  margin-top: 70px;
+}
+main .row > #slide3 > .row > div:nth-of-type(1) > * {
+  font-family: "text2";
+  padding-left: 50px;
+  margin-top: 20px;
+}
+main .row > #slide3 > .row > div:nth-of-type(1) > h5 {
+  font-size: 20px;
+  padding-top: 20px;
+}
+main .row > #slide3 > .row > div:nth-of-type(1) > a {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid rgb(163, 3, 3);
+  background-color: rgba(11, 11, 11, 0.509);
+  line-height: 70px;
+  margin-left: 50px;
+  transition: 0.4s;
+}
+main .row > #slide3 > .row > div:nth-of-type(1) > a:hover {
+  background-color: rgb(135, 22, 22);
+}
+main .row > #slide3 > .row > div:nth-of-type(2) > #box > * {
+  font-size: 16px;
+  font-family: "text";
+  padding-top: 5px;
+}
+main .row > #slide3 > .row > div:nth-of-type(2) > #box > i {
+  color: rgb(220, 11, 11);
+}
+main .row > #slide3 > .row > div:nth-of-type(2) > #box > h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .row > #slide3 > .row > div:nth-of-type(2) > #box > p {
+  color: rgba(233, 227, 227, 0.883);
+}
+main .row > #box1 {
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 0px 20px 10px rgb(239, 237, 237);
+  border-radius: 10px;
+  margin-top: 80px;
+  position: relative;
+}
+main .row > #box1 > div {
+  border-radius: 50%;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+  box-shadow: 0 0 15px 10px rgb(242, 240, 240);
+  background-color: white;
+  position: absolute;
+  bottom: 85%;
+  left: 5%;
+}
+main .row > #box1 > div > i {
+  font-size: 25px;
+  color: rgb(210, 15, 15);
+}
+main .row > #box1 > h4 {
+  font-family: "header";
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 35px;
+}
+main .row > #box1 > p {
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.681);
+}
+main .row > #box2 {
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .row > #box2 > div:nth-of-type(1) > i {
+  font-size: 50px;
+}
+main .row > #box2 > div:nth-of-type(2) > h5 {
+  font-size: 18px;
+  margin-top: 12px;
+}
+main .row > #box4 > * {
+  padding-left: 35px;
+}
+main .row > #box4 > h5 {
+  font-family: "title";
+  font-weight: bold;
+  font-size: 30px;
+}
+main .row > #box4 > p {
+  font-family: "text";
+  color: rgba(26, 24, 24, 0.832);
+}
+main .row > #box4 > ul > li {
+  color: rgba(19, 17, 17, 0.901);
+}
+main .row > #slide4 {
+  margin-top: 80px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+main .row > #slide4::after {
+  content: "";
+  width: 130%;
+  height: 140%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(8, 7, 7, 0.96);
+  rotate: -5deg;
+  transform: translateX(-35px);
+}
+main .row > #slide4 > .row > #text {
+  z-index: 100;
+  margin-top: 70px;
+}
+main .row > #slide4 > .row > #text > h3 {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: "text2";
+  font-weight: bolder;
+  position: relative;
+}
+main .row > #slide4 > .row > #text > h3::before {
+  content: "";
+  width: 47px;
+  height: 3px;
+  background-color: rgb(174, 7, 7);
+  position: absolute;
+  top: 58px;
+  left: calc(50% - 26px);
+}
+main .row > #slide4 > .row > #text > h5 {
+  color: rgba(255, 255, 255, 0.929);
+  font-family: "text";
+  font-size: 23px;
+  padding-top: 30px;
+}
+main .row > #slide4 #box5 {
+  z-index: 100;
+  margin-top: 20px;
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .row > #slide4 #box5:hover {
+  background-color: rgba(68, 67, 67, 0.746);
+}
+main .row > #slide4 #box5 > div:nth-of-type(1) > i {
+  font-size: 35px;
+  color: rgb(146, 30, 30);
+}
+main .row > #slide4 #box5 > div:nth-of-type(2) > h4 {
+  font-size: 25px;
+  font-family: "header";
+  font-weight: bold;
+  margin-top: 20px;
+}
+main .row > #slide4 #box5 > div:nth-of-type(2) > p {
+  font-size: 15px;
+}
+main .row > #slide5 {
+  margin-top: 60px;
+}
+main .row > #slide5 > .row > #text1 {
+  margin-top: 20px;
+}
+main .row > #slide5 > .row > #text1 > h3 {
+  text-transform: uppercase;
+  color: rgb(11, 10, 10);
+  font-family: "text2";
+  font-weight: bolder;
+  position: relative;
+}
+main .row > #slide5 > .row > #text1 > h3::before {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: rgb(207, 14, 14);
+  position: absolute;
+  top: 58px;
+  left: calc(50% - 26px);
+}
+main .row > #slide5 > .row > #text1 > h5 {
+  color: rgba(13, 12, 12, 0.861);
+  font-family: "text";
+  font-size: 23px;
+  padding-top: 30px;
+}
+main .row > #slide5 > .row > #text1 > ul {
+  padding-top: 10px;
+}
+main .row > #slide5 > .row > #text1 > ul > li {
+  padding: 0 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "text";
+  color: rgba(13, 12, 12, 0.861);
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .row > #slide5 > .row > #text1 > ul > li:first-child {
+  background-color: rgb(174, 6, 6);
+  color: white;
+  border-radius: 5px;
+}
+main .row > #slide5 > .row > #text1 > ul > li:nth-of-type(2):hover, main .row > #slide5 > .row > #text1 > ul > li:nth-of-type(3):hover, main .row > #slide5 > .row > #text1 > ul > li:nth-of-type(4):hover {
+  background-color: rgb(174, 6, 6);
+  color: white;
+  border-radius: 5px;
+}
+main .row > #slide5 > .row > figure {
+  width: 350px;
+  height: 300px;
+  margin: 15px 15px;
+  overflow: hidden !important;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .row > #slide5 > .row > figure:hover > img {
+  width: 110%;
+  height: 110%;
+}
+main .row > #slide5 > .row > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+}
+main .row > #slide6 {
+  margin-top: 80px;
+}
+main .row > #slide6 > .row > #text2 {
+  margin-top: 20px;
+}
+main .row > #slide6 > .row > #text2 > h3 {
+  text-transform: uppercase;
+  color: rgb(11, 10, 10);
+  font-family: "text2";
+  font-weight: bolder;
+  position: relative;
+}
+main .row > #slide6 > .row > #text2 > h3::before {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: rgb(207, 14, 14);
+  position: absolute;
+  top: 58px;
+  left: calc(50% - 26px);
+}
+main .row > #slide6 > .row > #text2 > h5 {
+  color: rgba(13, 12, 12, 0.861);
+  font-family: "text";
+  font-size: 23px;
+  padding-top: 30px;
+}
+main .row > #slide6 > .row > #box6 {
+  margin-top: 40px;
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 10px rgba(243, 236, 236, 0.881);
+}
+main .row > #slide6 > .row > #box6 > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 250px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+main .row > #slide6 > .row > #box6 > h5 {
+  font-family: "header";
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+main .row > #slide6 > .row > #box6 > span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.565);
+  padding-left: 15px;
+}
+main .row > #slide6 > .row > #box6 > p {
+  font-family: "text";
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.777);
+}
+main .row > #slide7 {
+  margin-top: 110px;
+  position: relative;
+  overflow: hidden;
+}
+main .row > #slide7::after {
+  content: "";
+  width: 150%;
+  height: 160%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  rotate: -5deg;
+  background-color: rgb(4, 3, 3);
+  transform: translateX(-37px);
+}
+main .row > #slide7 > .row > #text3 {
+  z-index: 100;
+  margin-top: 90px;
+}
+main .row > #slide7 > .row > #text3 > h3 {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: "text2";
+  font-weight: bolder;
+  position: relative;
+}
+main .row > #slide7 > .row > #text3 > h3::before {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: rgb(207, 14, 14);
+  position: absolute;
+  top: 58px;
+  left: calc(50% - 26px);
+}
+main .row > #slide7 > .row > #text3 > h5 {
+  color: rgba(236, 229, 229, 0.861);
+  font-family: "text";
+  font-size: 23px;
+  padding-top: 30px;
+}
+main .row > #slide7 > .row > #box7 {
+  z-index: 100;
+  width: 400px;
+  background-color: rgba(3, 3, 3, 0.964);
+  margin: 60px 0;
+  border-radius: 10px;
+}
+main .row > #slide7 > .row > #box7:nth-of-type(1), main .row > #slide7 > .row > #box7:nth-of-type(3) {
+  background-color: rgba(32, 32, 32, 0.845);
+}
+main .row > #slide7 > .row > #box7 > * {
+  color: white;
+  font-family: "text";
+}
+main .row > #slide7 > .row > #box7 > h4 {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: bold;
+}
+main .row > #slide7 > .row > #box7 h3 {
+  margin-top: 12px;
+}
+main .row > #slide7 > .row > #box7 h3 > i {
+  font-size: 20px;
+}
+main .row > #slide7 > .row > #box7 h3 > sub {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "header";
+}
+main .row > #slide7 > .row > #box7 h3 > span {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.81);
+}
+main .row > #slide7 > .row > #box7 > p {
+  font-size: 18px;
+}
+main .row > #slide7 > .row > #box7 > del {
+  color: rgba(224, 219, 219, 0.684);
+  font-size: 17px;
+}
+main .row > #slide7 > .row > #box7 > button {
+  text-transform: capitalize;
+  border: 2px solid rgba(140, 140, 140, 0.964);
+  transition: 0.4s;
+}
+main .row > #slide7 > .row > #box7 > button:hover {
+  border: 2px solid white;
+}
+main .row > #slide8 {
+  margin-top: 90px;
+}
+main .row > #slide8 > .row > #text4 {
+  margin-top: 20px;
+}
+main .row > #slide8 > .row > #text4 > h3 {
+  text-transform: uppercase;
+  color: rgb(32, 31, 31);
+  font-family: "text2";
+  font-weight: bolder;
+  position: relative;
+}
+main .row > #slide8 > .row > #text4 > h3::before {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: rgb(207, 14, 14);
+  position: absolute;
+  top: 67px;
+  left: calc(50% - 25px);
+}
+main .row > #slide8 > .row > #accordionFlushExample {
+  margin-top: 50px;
+  font-family: "text";
+  transition: 0.4s;
+}
+main .row > #slide8 > .row > #accordionFlushExample > div > h2 > button > a {
+  transition: 0.4s;
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+}
+main .row > #slide8 > .row > #accordionFlushExample > div > h2 > button > a:hover {
+  color: orangered;
+}
+main .row > #slide9 {
+  margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+}
+main .row > #slide9::after {
+  content: "";
+  width: 150%;
+  height: 190%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  rotate: -5deg;
+  background-color: rgb(18, 18, 18);
+  transform: translateX(-70px);
+}
+main .row > #slide9 > .row > #text5 {
+  z-index: 100;
+  margin-top: 80px;
+}
+main .row > #slide9 > .row > #text5 > h3 {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: "text2";
+  font-weight: bolder;
+  position: relative;
+}
+main .row > #slide9 > .row > #text5 > h3::before {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: rgb(207, 14, 14);
+  position: absolute;
+  top: 58px;
+  left: calc(50% - 26px);
+}
+main .row > #slide9 > .row > #text5 > h5 {
+  color: rgba(236, 229, 229, 0.861);
+  font-family: "text";
+  font-size: 23px;
+  padding-top: 30px;
+}
+main .row > #slide9 > .row > figure {
+  z-index: 100;
+  width: 280px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+main .row > #slide9 > .row > figure:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+main .row > #slide9 > .row > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+main .row > #slide9 > .row > figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+main .row > #slide9 > .row > figure:hover::after {
+  opacity: 0;
+}
+main .row > #slide9 > .row > figure > ul {
+  z-index: 100;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+main .row > #slide9 > .row > figure > ul > li {
+  padding: 3px 10px;
+  margin: 0 5px;
+  background-color: rgb(196, 4, 4);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+main .row > #slide9 > .row > figure > ul > li:hover {
+  background-color: rgb(17, 16, 16);
+}
+main .row > #slide9 > .row > figure > ul > li > i {
+  color: rgb(244, 237, 237);
+}
+main .row > footer {
+  margin-top: 90px;
+  background-color: rgb(4, 3, 3);
+}
+main .row > footer > .row > * {
+  color: white;
+}
+main .row > footer > .row > div:nth-of-type(1) {
+  font-family: "header";
+  padding: 20px 80px;
+}
+main .row > footer > .row > div:nth-of-type(1) > h5 {
+  font-weight: bold;
+}
+main .row > footer > .row > div:nth-of-type(2) {
+  margin-top: 20px;
+}
+main .row > footer > .row > div:nth-of-type(2) > h5 {
+  font-family: "header";
+  font-weight: bold;
+}
+main .row > footer > .row > div:nth-of-type(2) > p {
+  font-family: "text";
+}
+main .row > footer > .row > div:nth-of-type(2) > input::-moz-placeholder {
+  font-size: 18px;
+  font-family: "text";
+}
+main .row > footer > .row > div:nth-of-type(2) > input::placeholder {
+  font-size: 18px;
+  font-family: "text";
+}
+main .row > footer > .row > div:nth-of-type(2) > button {
+  font-size: 15px;
+  margin-top: 15px;
+}
+main .row > footer > .row > nav {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .row > footer > .row > nav > h5 {
+  margin-top: 30px;
+  font-family: "header";
+  font-weight: bold;
+}
+main .row > footer > .row > nav > ul {
+  text-align: center;
+}
+main .row > footer > .row > nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(235, 235, 235, 0.865);
+  font-size: 15px;
+  font-family: "text2";
+  margin-top: 5px;
+  transition: 0.4s;
+}
+main .row > footer > .row > nav > ul > li > a:hover {
+  color: orange;
+}
+main .row > footer > .row > nav > ul > li > i {
+  font-size: 13px;
+}
+main .row > #slide10 {
+  background-color: rgb(4, 3, 3);
+}
+main .row > #slide10 > #pic {
+  width: 145px;
+  height: 135px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .row > #slide10 > #pic:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+main .row > #slide10 > #pic > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px rgb(60, 60, 220);
+}
+main .row > #slide10 > #pic > ul {
+  rotate: -70deg;
+  position: absolute;
+  top: 10px;
+  right: 110px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+main .row > #slide10 > #pic > ul > li {
+  padding: 2px 7px;
+  margin: 0px 5px;
+  background-color: rgb(185, 5, 5);
+  border-radius: 50%;
+  rotate: 90deg;
+  transition: 0.4s;
+}
+main .row > #slide10 > #pic > ul > li:hover {
+  background-color: rgb(1, 35, 65);
+}
+main .row > #slide10 > #pic > ul > li:nth-of-type(1) {
+  margin-top: 30px;
+}
+main .row > #slide10 > #pic > ul > li:nth-of-type(3) {
+  margin-left: 10px;
+}
+main .row > #slide10 > #pic > ul > li > a {
+  text-decoration: none;
+}
+main .row > #slide10 > #pic > ul > li > a > i {
+  font-size: 18px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
